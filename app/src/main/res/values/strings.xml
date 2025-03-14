@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">kotlin_math_mini_game</string>
+    <string name="welcome_logo">Welcome logo</string>
+    <string name="number_composition">Number composition</string>
+    <string name="rules">The rules of the game: In front you will have three figures, two at the bottom and one at the top, in two of them will be numbers. It is necessary that the sum of the numbers in the two bottom figures equals the number in the top figure.</string>
+    <string name="question_mark">U+003F</string>
+    <string name="progress_answers">Correct answers %s (minimal %s)</string>
 </resources>

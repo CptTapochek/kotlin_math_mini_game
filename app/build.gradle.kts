@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.kotlin_math_mini_game"
-    compileSdk = 35
+    compileSdk = 28
 
     defaultConfig {
         applicationId = "com.example.kotlin_math_mini_game"
@@ -49,6 +49,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
