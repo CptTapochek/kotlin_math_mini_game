@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.kotlin_math_mini_game"
-    compileSdk = 28
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.kotlin_math_mini_game"
@@ -36,6 +36,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
 
