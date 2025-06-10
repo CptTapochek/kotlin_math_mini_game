@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:layout_margin="48dp"
         android:contentDescription="Game over"
-        app:layout_constraintBottom_toTopOf="@+id/tv_required_answers"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score_answers"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,43 +22,43 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/tv_required_answers"
+        android:id="@+id/tv_score_answers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Required number of correct answers: %s"
+        android:text="@string/score_answer"
         tools:ignore="HardcodedText"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_score_answers"
+        app:layout_constraintBottom_toTopOf="@+id/tv_required_answers"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
-        android:id="@+id/tv_score_answers"
+        android:id="@+id/tv_required_answers"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Your score: %s"
+        android:text="@string/required_score"
         tools:ignore="HardcodedText"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_required_percentage"
-        app:layout_constraintRight_toRightOf="@+id/tv_required_answers"
-        app:layout_constraintLeft_toLeftOf="@+id/tv_required_answers"
-        app:layout_constraintTop_toBottomOf="@id/tv_required_answers"/>
+        app:layout_constraintRight_toRightOf="@+id/tv_score_answers"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_score_answers"
+        app:layout_constraintTop_toBottomOf="@id/tv_score_answers"/>
 
     <TextView
         android:id="@+id/tv_required_percentage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Required percentage of correct answers: %s"
+        android:text="@string/required_percentage"
         tools:ignore="HardcodedText"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_score_percentage"
-        app:layout_constraintRight_toRightOf="@+id/tv_required_answers"
-        app:layout_constraintLeft_toLeftOf="@+id/tv_required_answers"
-        app:layout_constraintTop_toBottomOf="@+id/tv_score_answers"
+        app:layout_constraintRight_toRightOf="@+id/tv_score_answers"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_score_answers"
+        app:layout_constraintTop_toBottomOf="@+id/tv_required_answers"
         app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
@@ -66,7 +66,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Percent of correct answers: %s"
+        android:text="@string/score_percent"
         tools:ignore="HardcodedText"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

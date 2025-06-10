@@ -5,4 +5,8 @@
     <string name="rules">The rules of the game: In front you will have three figures, two at the bottom and one at the top, in two of them will be numbers. It is necessary that the sum of the numbers in the two bottom figures equals the number in the top figure.</string>
     <string name="question_mark">U+003F</string>
     <string name="progress_answers">Correct answers %s (minimal %s)</string>
+    <string name="score_answer">Your score: %s</string>
+    <string name="required_score">Required number of correct answers: %s</string>
+    <string name="required_percentage">Required percentage of correct answers: %s</string>
+    <string name="score_percent">Percent of correct answers: %s</string>
 </resources>
