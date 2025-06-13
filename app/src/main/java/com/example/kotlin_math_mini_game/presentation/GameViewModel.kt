@@ -2,12 +2,10 @@ package com.example.kotlin_math_mini_game.presentation
 
 import android.annotation.SuppressLint
 import android.app.Application
-import android.content.Context
 import android.os.CountDownTimer
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.example.kotlin_math_mini_game.R
 import com.example.kotlin_math_mini_game.data.GameRepositoryImpl
 import com.example.kotlin_math_mini_game.domain.entity.GameResult
@@ -20,7 +18,7 @@ import com.example.kotlin_math_mini_game.domain.usecases.GetGameSettingUseCase
 class GameViewModel(
     private val application: Application,
     private val level: Level
-): ViewModel(application) {
+): AndroidViewModel(application) {
 
     private lateinit var gameSettings: GameSettings
     private val repository = GameRepositoryImpl
